@@ -57,4 +57,8 @@ jobs:
           prerelease: false
           with:
             name: zipped-bundle
+             release_name: Release ${{ github.run_number }}
+             body: New release for ${{ github.sha }}. Release notes can be found in the docs.
+             draft: false
+             prerelease: false
             path: ${{ github.sha }}.zip
