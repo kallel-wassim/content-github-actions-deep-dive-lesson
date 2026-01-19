@@ -41,7 +41,7 @@ jobs:
             zip -r ../${{ github.sha }}.zip .
       - name: Archive artifact
         uses: actions/upload-artifact@v2
-  publish:
+publish:
   runs-on: ubuntu-latest
   steps:
     - name: Create release
